@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collector>
+  <configuration>
+    <errorlog>/opt/Collector/log/vplexcollector-error.log</errorlog>
+    <carbon address="127.0.0.1" port="2003"></carbon>
+    <interval>10</interval>
+    <replacelist>
+      <replace what=" (us)" value=""></replace>
+      <replace what=" (KB/s)" value=""></replace>
+      <replace what=" (counts/s)" value=""></replace>
+      <replace what=" (counts)" value=""></replace>
+      <replace what=" (%)" value=""></replace>
+    </replacelist>
+
+  </configuration>
+  <vplex>
+    <name>pvplx01cn</name>
+    <address>10.202.12.29</address>
+    <username>monitor</username>
+    <password>monitor!</password>
+    <monitors>
+      <monitor director="1-1-A" file="/var/log/VPlex/cli/reports/director-1-1-A.csv"></monitor>
+      <monitor director="1-1-A" file="/var/log/VPlex/cli/reports/director-1-1-A_be.csv"></monitor>
+      <monitor director="1-1-A" file="/var/log/VPlex/cli/reports/director-1-1-A_fe.csv"></monitor>
+      <monitor director="1-1-A" file="/var/log/VPlex/cli/reports/director-1-1-A_fe-lu.csv"></monitor>
+      <monitor director="1-1-A" file="/var/log/VPlex/cli/reports/director-1-1-A_storage-volume.csv"></monitor>
+      <monitor director="1-1-A" file="/var/log/VPlex/cli/reports/director-1-1-A_virtual-volume.csv"></monitor>
+      <monitor director="1-1-B" file="/var/log/VPlex/cli/reports/director-1-1-B.csv"></monitor>
+      <monitor director="1-1-B" file="/var/log/VPlex/cli/reports/director-1-1-B_be.csv"></monitor>
+      <monitor director="1-1-B" file="/var/log/VPlex/cli/reports/director-1-1-B_fe.csv"></monitor>
+      <monitor director="1-1-B" file="/var/log/VPlex/cli/reports/director-1-1-B_fe-lu.csv"></monitor>
+      <monitor director="1-1-B" file="/var/log/VPlex/cli/reports/director-1-1-B_storage-volume.csv"></monitor>
+      <monitor director="1-1-B" file="/var/log/VPlex/cli/reports/director-1-1-B_virtual-volume.csv"></monitor>
+    </monitors>
+  </vplex>
+</collector>
