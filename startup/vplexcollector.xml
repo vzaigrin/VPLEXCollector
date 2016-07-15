@@ -14,8 +14,8 @@
 
   </configuration>
   <vplex>
-    <name>pvplx01cn</name>
-    <address>10.202.12.29</address>
+    <name>vplex01</name>
+    <address>10.10.10.10</address>
     <username>monitor</username>
     <password>monitor!</password>
     <monitors>
