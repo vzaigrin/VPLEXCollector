@@ -66,7 +66,7 @@
             }
           ],
           "timeFrom": "24h",
-          "timeShift": "20m",
+          "timeShift": "10m",
           "title": "Directors Busy",
           "tooltip": {
             "shared": true,
@@ -720,66 +720,66 @@
           ]
         },
         {
-          "title": "FE Directors Write Latency (usec)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 34,
+          "aliasColors": {},
+          "bars": false,
           "datasource": null,
-          "renderer": "flot",
-          "x-axis": true,
-          "y-axis": true,
-          "y_formats": [
-            "short",
-            "short"
-          ],
+          "editable": true,
+          "error": false,
+          "fill": 1,
           "grid": {
             "leftLogBase": 1,
             "leftMax": null,
-            "rightMax": null,
             "leftMin": null,
-            "rightMin": null,
             "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
             "threshold1": null,
-            "threshold2": null,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
-          "lines": true,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": false,
-          "stack": false,
-          "percentage": false,
+          "id": 34,
           "legend": {
-            "show": true,
-            "values": false,
-            "min": false,
-            "max": false,
+            "avg": false,
             "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
             "total": false,
-            "avg": false
+            "values": false
           },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
           "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
           "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
           "targets": [
             {
               "refId": "A",
               "target": "aliasByNode(vplex.vplex01.*.fe-director.write-lat.recent-average, 2)"
             }
           ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "FE Directors Write Latency (usec)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "short",
+            "short"
+          ]
         }
       ],
       "title": "Directors FE Read & Write Latency (usec)"
@@ -1023,202 +1023,258 @@
       "title": "FE & BE Ports Read (KB/s)"
     },
     {
-      "title": "FE & BE Ports Write (KB/s)",
-      "height": "250px",
-      "editable": true,
       "collapse": false,
+      "editable": true,
+      "height": "250px",
       "panels": [
         {
-          "title": "FE Ports Write (KB/s)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 35,
+          "aliasColors": {},
+          "bars": false,
           "datasource": null,
-          "renderer": "flot",
-          "x-axis": true,
-          "y-axis": true,
-          "y_formats": [
-            "short",
-            "short"
-          ],
+          "editable": true,
+          "error": false,
+          "fill": 1,
           "grid": {
             "leftLogBase": 1,
             "leftMax": null,
-            "rightMax": null,
             "leftMin": null,
-            "rightMin": null,
             "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
             "threshold1": null,
-            "threshold2": null,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
-          "lines": true,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": false,
-          "stack": false,
-          "percentage": false,
+          "id": 35,
           "legend": {
-            "show": true,
-            "values": false,
-            "min": false,
-            "max": false,
+            "avg": false,
             "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
             "total": false,
-            "avg": false
+            "values": false
           },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
           "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
           "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
           "targets": [
             {
               "refId": "A",
               "target": "aliasByNode(vplex.vplex01.*.fe-prt.write.*, 5)"
             }
           ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
-        },
-        {
-          "title": "BE Ports Write (KB/s)",
-          "error": false,
-          "span": 6,
-          "editable": true,
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "FE Ports Write (KB/s)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
           "type": "graph",
-          "id": 36,
-          "datasource": null,
-          "renderer": "flot",
           "x-axis": true,
           "y-axis": true,
           "y_formats": [
             "short",
             "short"
-          ],
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
           "grid": {
             "leftLogBase": 1,
             "leftMax": null,
-            "rightMax": null,
             "leftMin": null,
-            "rightMin": null,
             "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
             "threshold1": null,
-            "threshold2": null,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
-          "lines": true,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": false,
-          "stack": false,
-          "percentage": false,
+          "id": 36,
           "legend": {
-            "show": true,
-            "values": false,
-            "min": false,
-            "max": false,
+            "avg": false,
             "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
             "total": false,
-            "avg": false
+            "values": false
           },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
           "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
           "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
           "targets": [
             {
               "refId": "A",
               "target": "aliasByNode(vplex.vplex01.*.be-prt.write.*, 5)"
             }
           ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
-        }
-      ]
-    },
-    {
-      "title": "FE Ports Read & Write Latency (usec)",
-      "height": "250px",
-      "editable": true,
-      "collapse": false,
-      "panels": [
-        {
-          "title": "FE Ports Read Latency (usec)",
-          "error": false,
-          "span": 6,
-          "editable": true,
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "BE Ports Write (KB/s)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
           "type": "graph",
-          "id": 13,
-          "datasource": null,
-          "renderer": "flot",
           "x-axis": true,
           "y-axis": true,
           "y_formats": [
             "short",
             "short"
-          ],
+          ]
+        }
+      ],
+      "title": "FE & BE Ports Write (KB/s)"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "250px",
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
           "grid": {
             "leftLogBase": 1,
             "leftMax": null,
-            "rightMax": null,
             "leftMin": null,
-            "rightMin": null,
             "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
             "threshold1": null,
-            "threshold2": null,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
-          "lines": true,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": false,
-          "stack": false,
-          "percentage": false,
+          "id": 13,
           "legend": {
-            "show": true,
-            "values": false,
-            "min": false,
-            "max": false,
+            "avg": false,
             "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
             "total": false,
-            "avg": false
+            "values": false
           },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
           "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [
+            {
+              "alias": "B0-FC00",
+              "yaxis": 2
+            },
+            {
+              "alias": "B0-FC01",
+              "yaxis": 2
+            },
+            {
+              "alias": "B0-FC02",
+              "yaxis": 2
+            },
+            {
+              "alias": "B0-FC03",
+              "yaxis": 2
+            }
+          ],
+          "span": 6,
+          "stack": false,
           "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
           "targets": [
             {
               "refId": "A",
               "target": "aliasByNode(vplex.vplex01.*.fe-prt.read-avg-lat.*, 5)"
             }
           ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "FE Ports Read Latency (usec)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "short",
+            "short"
+          ]
+        },
+        {
           "aliasColors": {},
+          "bars": false,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 37,
+          "legend": {
+            "avg": false,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": false
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
           "seriesOverrides": [
             {
               "alias": "B0-FC00",
@@ -1237,15 +1293,1102 @@
               "yaxis": 2
             }
           ],
-          "links": []
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(vplex.vplex01.*.fe-prt.write-avg-lat.*, 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "FE Ports Write Latency (usec)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "short",
+            "short"
+          ]
+        }
+      ],
+      "title": "FE Ports Read & Write Latency (usec)"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "250px",
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": true,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 14,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-A.fe-lu.ops.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-A FE Volumes Ops (counts/s)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "short",
+            "short"
+          ]
         },
         {
-          "title": "FE Ports Write Latency (usec)",
+          "aliasColors": {},
+          "bars": true,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 22,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-B.fe-lu.ops.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-B FE Volumes Ops (counts/s)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "short",
+            "short"
+          ]
+        }
+      ],
+      "title": "FE Volumes Ops (counts/s)"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "250px",
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": true,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 15,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "null",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-A.fe-lu.read.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-A FE Volumes Read (KB/s)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "short",
+            "short"
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": true,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 16,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-B.fe-lu.read.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-B FE Volumes Read (KB/s)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "short",
+            "short"
+          ]
+        }
+      ],
+      "title": "FE Volumes Read (KB/s)"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "250px",
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": true,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 24,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-A.fe-lu.write.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-A FE Volumes Write (KB/s)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "short",
+            "short"
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": true,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 25,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-B.fe-lu.write.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-B FE Volumes Write (KB/s)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "short",
+            "short"
+          ]
+        }
+      ],
+      "title": "FE Volumes Write (KB/s)"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "250px",
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": true,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 17,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-A.fe-lu.read-avg-lat.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-A FE Volumes Read Latency (usec)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "short",
+            "short"
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": true,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 18,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-B.fe-lu.read-avg-lat.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-B FE Volumes Read Latency (usec)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "short",
+            "short"
+          ]
+        }
+      ],
+      "title": "FE Volumes Read Latency (usec)"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "250px",
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": true,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 26,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-A.fe-lu.write-avg-lat.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-A FE Volumes Write Latency (usec)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "short",
+            "short"
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": true,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 27,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-B.fe-lu.write-avg-lat.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-B FE Volumes Write Latency (usec)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "short",
+            "short"
+          ]
+        }
+      ],
+      "title": "FE Volumes Write Latency(usec)"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "250px",
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": true,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 19,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-A.virtual-volume.ops.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-A Virtual Volumes Ops (counts/s)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "short",
+            "short"
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": true,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 23,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-B.virtual-volume.ops.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-B Virtual Volumes Ops (counts/s)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "short",
+            "short"
+          ]
+        }
+      ],
+      "title": "Virtual Volumes Ops (counts/s)"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "250px",
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": true,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 20,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-A.virtual-volume.read.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-A Virtual Volumes Read (KB/s)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "short",
+            "short"
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": true,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 21,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-B.virtual-volume.read.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-B Virtual Volumes Read (KB/s)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "short",
+            "short"
+          ]
+        }
+      ],
+      "title": "Virtual Volumes Read (KB/s)"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "250px",
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": true,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 28,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-A.virtual-volume.write.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-A Virtual Volumes Write (KB/s)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "short",
+            "short"
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": true,
+          "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 29,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-B.virtual-volume.write.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-B Virtual Volumes Write (KB/s)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "short",
+            "short"
+          ]
+        }
+      ],
+      "title": "Virtual Volumes Write (KB/s)"
+    },
+    {
+      "title": "Storage Volumes Average Read & Write Latency (usec)",
+      "height": "250px",
+      "editable": true,
+      "collapse": false,
+      "panels": [
+        {
+          "title": "Storage Volumes Average Read Latency (usec)",
           "error": false,
           "span": 6,
           "editable": true,
           "type": "graph",
-          "id": 37,
+          "id": 38,
           "datasource": null,
           "renderer": "flot",
           "x-axis": true,
@@ -1294,94 +2437,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.*.fe-prt.write-avg-lat.*, 5)"
-            }
-          ],
-          "aliasColors": {},
-          "seriesOverrides": [
-            {
-              "alias": "B0-FC00",
-              "yaxis": 2
-            },
-            {
-              "alias": "B0-FC01",
-              "yaxis": 2
-            },
-            {
-              "alias": "B0-FC02",
-              "yaxis": 2
-            },
-            {
-              "alias": "B0-FC03",
-              "yaxis": 2
-            }
-          ],
-          "links": []
-        }
-      ]
-    },
-    {
-      "title": "FE Volumes Ops (counts/s)",
-      "height": "250px",
-      "editable": true,
-      "collapse": false,
-      "panels": [
-        {
-          "title": "1-1-A FE Volumes Ops (counts/s)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 14,
-          "datasource": null,
-          "renderer": "flot",
-          "x-axis": true,
-          "y-axis": true,
-          "y_formats": [
-            "short",
-            "short"
-          ],
-          "grid": {
-            "leftLogBase": 1,
-            "leftMax": null,
-            "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
-            "rightLogBase": 1,
-            "threshold1": null,
-            "threshold2": null,
-            "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2Color": "rgba(234, 112, 112, 0.22)"
-          },
-          "lines": false,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": false,
-            "current": false,
-            "total": false,
-            "avg": true
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
-          "targets": [
-            {
-              "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-A.fe-lu.ops.*, 5)"
+              "target": "aliasByNode(vplex.vplex01.*.storage-volume.read-latency.recent-average, 2)"
             }
           ],
           "aliasColors": {},
@@ -1389,12 +2445,12 @@
           "links": []
         },
         {
-          "title": "1-1-B FE Volumes Ops (counts/s)",
+          "title": "Storage Volumes Average Write Latency (usec)",
           "error": false,
           "span": 6,
           "editable": true,
           "type": "graph",
-          "id": 22,
+          "id": 39,
           "datasource": null,
           "renderer": "flot",
           "x-axis": true,
@@ -1415,12 +2471,12 @@
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
-          "lines": false,
+          "lines": true,
           "fill": 1,
           "linewidth": 2,
           "points": false,
           "pointradius": 5,
-          "bars": true,
+          "bars": false,
           "stack": false,
           "percentage": false,
           "legend": {
@@ -1431,76 +2487,6 @@
             "current": false,
             "total": false,
             "avg": false
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
-          "targets": [
-            {
-              "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-B.fe-lu.ops.*, 5)"
-            }
-          ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
-        }
-      ]
-    },
-    {
-      "title": "FE Volumes Read (KB/s)",
-      "height": "250px",
-      "editable": true,
-      "collapse": false,
-      "panels": [
-        {
-          "title": "1-1-A FE Volumes Read (KB/s)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 15,
-          "datasource": null,
-          "renderer": "flot",
-          "x-axis": true,
-          "y-axis": true,
-          "y_formats": [
-            "short",
-            "short"
-          ],
-          "grid": {
-            "leftLogBase": 1,
-            "leftMax": null,
-            "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
-            "rightLogBase": 1,
-            "threshold1": null,
-            "threshold2": null,
-            "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2Color": "rgba(234, 112, 112, 0.22)"
-          },
-          "lines": false,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": false,
-            "current": false,
-            "total": false,
-            "avg": true
           },
           "nullPointMode": "null",
           "steppedLine": false,
@@ -1513,69 +2499,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-A.fe-lu.read.*, 5)"
-            }
-          ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
-        },
-        {
-          "title": "1-1-B FE Volumes Read (KB/s)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 16,
-          "datasource": null,
-          "renderer": "flot",
-          "x-axis": true,
-          "y-axis": true,
-          "y_formats": [
-            "short",
-            "short"
-          ],
-          "grid": {
-            "leftLogBase": 1,
-            "leftMax": null,
-            "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
-            "rightLogBase": 1,
-            "threshold1": null,
-            "threshold2": null,
-            "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2Color": "rgba(234, 112, 112, 0.22)"
-          },
-          "lines": false,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": false,
-            "current": false,
-            "total": false,
-            "avg": true
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
-          "targets": [
-            {
-              "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-B.fe-lu.read.*, 5)"
+              "target": "aliasByNode(vplex.vplex01.*.storage-volume.write-latency.recent-average, 2)"
             }
           ],
           "aliasColors": {},
@@ -1585,1060 +2509,268 @@
       ]
     },
     {
-      "title": "FE Volumes Write (KB/s)",
-      "height": "250px",
-      "editable": true,
       "collapse": false,
+      "editable": true,
+      "height": "250px",
       "panels": [
         {
-          "title": "1-1-A FE Volumes Write (KB/s)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 24,
+          "aliasColors": {},
+          "bars": true,
           "datasource": null,
-          "renderer": "flot",
-          "x-axis": true,
-          "y-axis": true,
-          "y_formats": [
-            "short",
-            "short"
-          ],
+          "editable": true,
+          "error": false,
+          "fill": 1,
           "grid": {
             "leftLogBase": 1,
             "leftMax": null,
-            "rightMax": null,
             "leftMin": null,
-            "rightMin": null,
             "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
             "threshold1": null,
-            "threshold2": null,
             "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
             "threshold2Color": "rgba(234, 112, 112, 0.22)"
           },
-          "lines": false,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": false,
-            "current": false,
-            "total": false,
-            "avg": true
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
-          "targets": [
-            {
-              "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-A.fe-lu.write.*, 5)"
-            }
-          ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
-        },
-        {
-          "title": "1-1-B FE Volumes Write (KB/s)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 25,
-          "datasource": null,
-          "renderer": "flot",
-          "x-axis": true,
-          "y-axis": true,
-          "y_formats": [
-            "short",
-            "short"
-          ],
-          "grid": {
-            "leftLogBase": 1,
-            "leftMax": null,
-            "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
-            "rightLogBase": 1,
-            "threshold1": null,
-            "threshold2": null,
-            "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2Color": "rgba(234, 112, 112, 0.22)"
-          },
-          "lines": false,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": false,
-            "current": false,
-            "total": false,
-            "avg": true
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
-          "targets": [
-            {
-              "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-B.fe-lu.write.*, 5)"
-            }
-          ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
-        }
-      ]
-    },
-    {
-      "title": "FE Volumes Read Latency (usec)",
-      "height": "250px",
-      "editable": true,
-      "collapse": false,
-      "panels": [
-        {
-          "title": "1-1-A FE Volumes Read Latency (usec)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 17,
-          "datasource": null,
-          "renderer": "flot",
-          "x-axis": true,
-          "y-axis": true,
-          "y_formats": [
-            "short",
-            "short"
-          ],
-          "grid": {
-            "leftLogBase": 1,
-            "leftMax": null,
-            "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
-            "rightLogBase": 1,
-            "threshold1": null,
-            "threshold2": null,
-            "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2Color": "rgba(234, 112, 112, 0.22)"
-          },
-          "lines": false,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": false,
-            "current": false,
-            "total": false,
-            "avg": true
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
-          "targets": [
-            {
-              "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-A.fe-lu.read-avg-lat.*, 5)"
-            }
-          ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
-        },
-        {
-          "title": "1-1-B FE Volumes Read Latency (usec)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 18,
-          "datasource": null,
-          "renderer": "flot",
-          "x-axis": true,
-          "y-axis": true,
-          "y_formats": [
-            "short",
-            "short"
-          ],
-          "grid": {
-            "leftLogBase": 1,
-            "leftMax": null,
-            "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
-            "rightLogBase": 1,
-            "threshold1": null,
-            "threshold2": null,
-            "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2Color": "rgba(234, 112, 112, 0.22)"
-          },
-          "lines": false,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": false,
-            "current": false,
-            "total": false,
-            "avg": true
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
-          "targets": [
-            {
-              "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-B.fe-lu.read-avg-lat.*, 5)"
-            }
-          ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
-        }
-      ]
-    },
-    {
-      "title": "FE Volumes Write Latency(usec)",
-      "height": "250px",
-      "editable": true,
-      "collapse": false,
-      "panels": [
-        {
-          "title": "1-1-A FE Volumes Write Latency (usec)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 26,
-          "datasource": null,
-          "renderer": "flot",
-          "x-axis": true,
-          "y-axis": true,
-          "y_formats": [
-            "short",
-            "short"
-          ],
-          "grid": {
-            "leftLogBase": 1,
-            "leftMax": null,
-            "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
-            "rightLogBase": 1,
-            "threshold1": null,
-            "threshold2": null,
-            "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2Color": "rgba(234, 112, 112, 0.22)"
-          },
-          "lines": false,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": false,
-            "current": false,
-            "total": false,
-            "avg": true
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
-          "targets": [
-            {
-              "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-A.fe-lu.write-avg-lat.*, 5)"
-            }
-          ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
-        },
-        {
-          "title": "1-1-B FE Volumes Write Latency (usec)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 27,
-          "datasource": null,
-          "renderer": "flot",
-          "x-axis": true,
-          "y-axis": true,
-          "y_formats": [
-            "short",
-            "short"
-          ],
-          "grid": {
-            "leftLogBase": 1,
-            "leftMax": null,
-            "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
-            "rightLogBase": 1,
-            "threshold1": null,
-            "threshold2": null,
-            "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2Color": "rgba(234, 112, 112, 0.22)"
-          },
-          "lines": false,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": false,
-            "current": false,
-            "total": false,
-            "avg": true
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
-          "targets": [
-            {
-              "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-B.fe-lu.write-avg-lat.*, 5)"
-            }
-          ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
-        }
-      ]
-    },
-    {
-      "title": "Virtual Volumes Ops (counts/s)",
-      "height": "250px",
-      "editable": true,
-      "collapse": false,
-      "panels": [
-        {
-          "title": "1-1-A Virtual Volumes Ops (counts/s)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 19,
-          "datasource": null,
-          "renderer": "flot",
-          "x-axis": true,
-          "y-axis": true,
-          "y_formats": [
-            "short",
-            "short"
-          ],
-          "grid": {
-            "leftLogBase": 1,
-            "leftMax": null,
-            "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
-            "rightLogBase": 1,
-            "threshold1": null,
-            "threshold2": null,
-            "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2Color": "rgba(234, 112, 112, 0.22)"
-          },
-          "lines": false,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": false,
-            "current": false,
-            "total": false,
-            "avg": true
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
-          "targets": [
-            {
-              "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-A.virtual-volume.ops.*, 5)"
-            }
-          ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
-        },
-        {
-          "title": "1-1-B Virtual Volumes Ops (counts/s)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 23,
-          "datasource": null,
-          "renderer": "flot",
-          "x-axis": true,
-          "y-axis": true,
-          "y_formats": [
-            "short",
-            "short"
-          ],
-          "grid": {
-            "leftLogBase": 1,
-            "leftMax": null,
-            "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
-            "rightLogBase": 1,
-            "threshold1": null,
-            "threshold2": null,
-            "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2Color": "rgba(234, 112, 112, 0.22)"
-          },
-          "lines": false,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": false,
-            "current": false,
-            "total": false,
-            "avg": true
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
-          "targets": [
-            {
-              "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-B.virtual-volume.ops.*, 5)"
-            }
-          ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
-        }
-      ]
-    },
-    {
-      "title": "Virtual Volumes Read (KB/s)",
-      "height": "250px",
-      "editable": true,
-      "collapse": false,
-      "panels": [
-        {
-          "title": "1-1-A Virtual Volumes Read (KB/s)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 20,
-          "datasource": null,
-          "renderer": "flot",
-          "x-axis": true,
-          "y-axis": true,
-          "y_formats": [
-            "short",
-            "short"
-          ],
-          "grid": {
-            "leftLogBase": 1,
-            "leftMax": null,
-            "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
-            "rightLogBase": 1,
-            "threshold1": null,
-            "threshold2": null,
-            "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2Color": "rgba(234, 112, 112, 0.22)"
-          },
-          "lines": false,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": false,
-            "current": false,
-            "total": false,
-            "avg": true
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
-          "targets": [
-            {
-              "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-A.virtual-volume.read.*, 5)"
-            }
-          ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
-        },
-        {
-          "title": "1-1-B Virtual Volumes Read (KB/s)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 21,
-          "datasource": null,
-          "renderer": "flot",
-          "x-axis": true,
-          "y-axis": true,
-          "y_formats": [
-            "short",
-            "short"
-          ],
-          "grid": {
-            "leftLogBase": 1,
-            "leftMax": null,
-            "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
-            "rightLogBase": 1,
-            "threshold1": null,
-            "threshold2": null,
-            "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2Color": "rgba(234, 112, 112, 0.22)"
-          },
-          "lines": false,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": false,
-            "current": false,
-            "total": false,
-            "avg": true
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
-          "targets": [
-            {
-              "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-B.virtual-volume.read.*, 5)"
-            }
-          ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
-        }
-      ]
-    },
-    {
-      "title": "Virtual Volumes Write (KB/s)",
-      "height": "250px",
-      "editable": true,
-      "collapse": false,
-      "panels": [
-        {
-          "title": "1-1-A Virtual Volumes Write (KB/s)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 28,
-          "datasource": null,
-          "renderer": "flot",
-          "x-axis": true,
-          "y-axis": true,
-          "y_formats": [
-            "short",
-            "short"
-          ],
-          "grid": {
-            "leftLogBase": 1,
-            "leftMax": null,
-            "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
-            "rightLogBase": 1,
-            "threshold1": null,
-            "threshold2": null,
-            "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2Color": "rgba(234, 112, 112, 0.22)"
-          },
-          "lines": false,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": false,
-            "current": false,
-            "total": false,
-            "avg": true
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
-          "targets": [
-            {
-              "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-A.virtual-volume.write.*, 5)"
-            }
-          ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
-        },
-        {
-          "title": "1-1-B Virtual Volumes Write (KB/s)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 29,
-          "datasource": null,
-          "renderer": "flot",
-          "x-axis": true,
-          "y-axis": true,
-          "y_formats": [
-            "short",
-            "short"
-          ],
-          "grid": {
-            "leftLogBase": 1,
-            "leftMax": null,
-            "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
-            "rightLogBase": 1,
-            "threshold1": null,
-            "threshold2": null,
-            "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2Color": "rgba(234, 112, 112, 0.22)"
-          },
-          "lines": false,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": false,
-            "current": false,
-            "total": false,
-            "avg": true
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
-          "targets": [
-            {
-              "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-B.virtual-volume.write.*, 5)"
-            }
-          ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
-        }
-      ]
-    },
-    {
-      "title": "Virtual Volumes Read Latency (usec)",
-      "height": "250px",
-      "editable": true,
-      "collapse": false,
-      "panels": [
-        {
-          "title": "1-1-A Storage Volumes Read Latency (usec)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
           "id": 30,
-          "datasource": null,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
           "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-A.storage-volume.per-storage-volume-read-avg-lat.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-A Storage Volumes Read Latency (usec)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
           "x-axis": true,
           "y-axis": true,
           "y_formats": [
             "short",
             "short"
-          ],
-          "grid": {
-            "leftLogBase": 1,
-            "leftMax": null,
-            "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
-            "rightLogBase": 1,
-            "threshold1": null,
-            "threshold2": null,
-            "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2Color": "rgba(234, 112, 112, 0.22)"
-          },
-          "lines": false,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": false,
-            "current": false,
-            "total": false,
-            "avg": true
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
-          "targets": [
-            {
-              "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-A.storage-volume.per-storage-volume-read-avg-lat.*, 5)"
-            }
-          ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
+          ]
         },
         {
-          "title": "1-1-B Storage Volumes Read Latency (usec)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 31,
+          "aliasColors": {},
+          "bars": true,
           "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 31,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
           "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-B.storage-volume.per-storage-volume-read-avg-lat.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-B Storage Volumes Read Latency (usec)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
           "x-axis": true,
           "y-axis": true,
           "y_formats": [
             "short",
             "short"
-          ],
-          "grid": {
-            "leftLogBase": 1,
-            "leftMax": null,
-            "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
-            "rightLogBase": 1,
-            "threshold1": null,
-            "threshold2": null,
-            "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2Color": "rgba(234, 112, 112, 0.22)"
-          },
-          "lines": false,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": false,
-            "current": false,
-            "total": false,
-            "avg": true
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
-          "targets": [
-            {
-              "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-B.storage-volume.per-storage-volume-read-avg-lat.*, 5)"
-            }
-          ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
+          ]
         }
-      ]
+      ],
+      "title": "Storage Volumes Read Latency (usec)"
     },
     {
-      "title": "Storage Volumes Writes Latency (usec)",
-      "height": "250px",
-      "editable": true,
       "collapse": false,
+      "editable": true,
+      "height": "250px",
       "panels": [
         {
-          "title": "1-1-A Storage Volume Write Latency (usec)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 32,
+          "aliasColors": {},
+          "bars": true,
           "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 32,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
           "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-A.storage-volume.per-storage-volume-write-avg-lat.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-A Storage Volume Write Latency (usec)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
           "x-axis": true,
           "y-axis": true,
           "y_formats": [
             "short",
             "short"
-          ],
-          "grid": {
-            "leftLogBase": 1,
-            "leftMax": null,
-            "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
-            "rightLogBase": 1,
-            "threshold1": null,
-            "threshold2": null,
-            "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2Color": "rgba(234, 112, 112, 0.22)"
-          },
-          "lines": false,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": false,
-            "current": false,
-            "total": false,
-            "avg": true
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
-          "targets": [
-            {
-              "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-A.storage-volume.per-storage-volume-write-avg-lat.*, 5)"
-            }
-          ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
+          ]
         },
         {
-          "title": "1-1-b Storage Volume Write Latency (usec)",
-          "error": false,
-          "span": 6,
-          "editable": true,
-          "type": "graph",
-          "id": 33,
+          "aliasColors": {},
+          "bars": true,
           "datasource": null,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 33,
+          "legend": {
+            "avg": true,
+            "current": false,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": false,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
           "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "refId": "A",
+              "target": "aliasByNode(averageAbove(vplex.vplex01.1-1-B.storage-volume.per-storage-volume-write-avg-lat.*, 1), 5)"
+            }
+          ],
+          "timeFrom": "24h",
+          "timeShift": "10m",
+          "title": "1-1-b Storage Volume Write Latency (usec)",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
           "x-axis": true,
           "y-axis": true,
           "y_formats": [
             "short",
             "short"
-          ],
-          "grid": {
-            "leftLogBase": 1,
-            "leftMax": null,
-            "rightMax": null,
-            "leftMin": null,
-            "rightMin": null,
-            "rightLogBase": 1,
-            "threshold1": null,
-            "threshold2": null,
-            "threshold1Color": "rgba(216, 200, 27, 0.27)",
-            "threshold2Color": "rgba(234, 112, 112, 0.22)"
-          },
-          "lines": false,
-          "fill": 1,
-          "linewidth": 2,
-          "points": false,
-          "pointradius": 5,
-          "bars": true,
-          "stack": false,
-          "percentage": false,
-          "legend": {
-            "show": true,
-            "values": true,
-            "min": false,
-            "max": false,
-            "current": false,
-            "total": false,
-            "avg": true
-          },
-          "nullPointMode": "connected",
-          "steppedLine": false,
-          "tooltip": {
-            "value_type": "cumulative",
-            "shared": true
-          },
-          "timeFrom": "24h",
-          "timeShift": "10m",
-          "targets": [
-            {
-              "refId": "A",
-              "target": "aliasByNode(vplex.vplex01.1-1-B.storage-volume.per-storage-volume-write-avg-lat.*, 5)"
-            }
-          ],
-          "aliasColors": {},
-          "seriesOverrides": [],
-          "links": []
+          ]
         }
-      ]
+      ],
+      "title": "Storage Volumes Writes Latency (usec)"
     }
   ],
   "time": {
@@ -2677,6 +2809,6 @@
     "list": []
   },
   "schemaVersion": 7,
-  "version": 13,
+  "version": 15,
   "links": []
 }
