@@ -128,7 +128,7 @@ class vplex( vplex: Map[String,Any],
            catch { case e: Exception => null }
     out = if( sock != null )  sock.getOutputStream()  else  null
     if( out == null )  {
-      log(vname + " file: Can't connect to the carbon")
+      log(vname + ": Can't connect to the carbon")
       return
     }
 
@@ -143,9 +143,13 @@ class vplex( vplex: Map[String,Any],
 
       val headcmd = Array("head", "-1", file).mkString(" ")
       val headresult = SSH.once(address, username, password)(_.execute(headcmd)).split(",")
+      if( headresult.length < 1 )
+        log(vname + ": Incorrect result from SSH 'head' command")
 
       val datacmd = Array("tail", "-1", file).mkString(" ")
       val dataresult = SSH.once(address, username, password)(_.execute(datacmd)).split(",")
+      if( dataresult.length < 1 )
+        log(vname + ": Incorrect result from SSH 'tail' command")
 
       val timestamp: Long = format.parse(dataresult(0)).getTime() / 1000
       val result = (headresult.drop(1) zip dataresult.drop(1)).toMap
