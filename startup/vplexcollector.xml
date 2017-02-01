@@ -11,7 +11,6 @@
       <replace what=" (counts)" value=""></replace>
       <replace what=" (%)" value=""></replace>
     </replacelist>
-
   </configuration>
   <vplex>
     <name>vplex01</name>
